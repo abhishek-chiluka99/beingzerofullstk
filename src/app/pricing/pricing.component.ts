@@ -12,8 +12,7 @@ export class PricingComponent implements OnInit {
 
   ngOnInit() {
     this.data.getData().subscribe( d=> {
-      this.users['arr'] = d ;
-      alert(this.users['arr'].length);
+      this.users= d['data'] ;
     })
   }
 
